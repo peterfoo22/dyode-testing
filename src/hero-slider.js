@@ -37,9 +37,9 @@ const HeroSlider = () => {
       </SwiperSlide>
       <SwiperSlide>
         <div className="swiper__header-container">
-          <h1 className="swiper__header">Shop Our Arrivals</h1>
-          <p className="swiper__subheader">
-            Our coolest new items are waiting for you!
+          <h1 className="swiper__header alternative">Men's Tees</h1>
+          <p className="swiper__subheader alternative">
+            Find the perfect shirt.
           </p>
           <button className="swiper__buy-button">Shop Now</button>
         </div>
