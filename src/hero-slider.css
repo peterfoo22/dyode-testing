@@ -33,7 +33,7 @@
 .swiper__header-container {
   position: absolute;
   top: 208px;
-  left: 137px;
+  left: 136px;
 }
 
 .swiper__header {
@@ -43,4 +43,38 @@
   font-weight: 400;
   font-size: 60px;
   line-height: 105px;
+  margin: 0;
+  color: #10504F;
 }
+
+.swiper__subheader {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 31px;
+  color: #10504F;
+  margin-bottom: 26px;
+  text-align: left;
+}
+
+.swiper__buy-button {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  background-color: black;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  height: 43px;
+  float: left;
+  border: none;
+}
+
+.alternative {
+  color: white;
+}
+

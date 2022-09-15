@@ -26,9 +26,23 @@ const HeroSlider = () => {
         <img src={HERO1} alt="shopify alt tag" />
       </SwiperSlide>
       <SwiperSlide>
+        <div className="swiper__header-container">
+          <h1 className="swiper__header alternative">Our Fave Tees</h1>
+          <p className="swiper__subheader alternative">
+            Shop All Our Favorites
+          </p>
+          <button className="swiper__buy-button">Shop Now</button>
+        </div>
         <img src={HERO2} alt="shopify alt tag" />
       </SwiperSlide>
       <SwiperSlide>
+        <div className="swiper__header-container">
+          <h1 className="swiper__header">Shop Our Arrivals</h1>
+          <p className="swiper__subheader">
+            Our coolest new items are waiting for you!
+          </p>
+          <button className="swiper__buy-button">Shop Now</button>
+        </div>
         <img src={HERO3} alt="shopify alt tag" />
       </SwiperSlide>
     </Swiper>
