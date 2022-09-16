@@ -16,3 +16,31 @@
 </h5>
 <p> <img width="420" alt="Screen Shot 2022-09-16 at 2 28 55 PM" src="https://user-images.githubusercontent.com/50802550/190638856-658a69e1-e5de-4064-b438-92e086b41bd9.png">
 </p>
+
+  
+ <h5>
+  4. Using liquid code, access the product named "Blue T-Shirt". Store the id, title, handle, price, url, and image in variables.
+</h5>
+<p> <img width="438" alt="Screen Shot 2022-09-16 at 2 29 46 PM" src="https://user-images.githubusercontent.com/50802550/190639003-1d8edcae-7053-4db2-a29b-acfb860afd36.png">
+</p>
+  
+   <h5>
+  5. Using liquid code, create a key:value array using the list below. Loop through the array. Upon key type, store the value in a variable to be used later:
+fruit:apple
+vegetable:carrot
+cloth:t-shirt
+denim:jeans
+</h5>
+<p> 
+<img width="462" alt="Screen Shot 2022-09-16 at 2 31 29 PM" src="https://user-images.githubusercontent.com/50802550/190639280-6b2f0153-6ee5-4498-a400-77f6db62d161.png">
+
+</p>
+
+  <h2>Front End Challenge</h2>
+  
+  <p>
+    <b>The Test</b>
+    <p>
+      I created a React app for this project, as this is what I am most experienced with.  I created the app using Swiper JS as it does not require any Jquery or other dependencies.  Another popular carousel is the slick carousel, or slick JS, but these require Jquery.  I deployed the app to the github pages at this link here ->  https://peterfoo22.github.io/dyode-testing/
+  </p>
+
