@@ -1,16 +1,15 @@
 
 Liquid Challenge Questions
 
-
-1. Describe how you would make a line of text in a homepage section editable from theme customization and how you would access this in liquid.
+1.  Describe how you would make a line of text in a homepage section editable from theme customization and how you would access this in liquid.
    
 Answer#1: To make a line of text editable in the Theme Customization.  In Shopify 2.0 you would create a section with a “textarea” setting in the JSON     schema.  Clients would have to edit this section through the theme customizer through Shopify CMS.
 
-2.How would you add the collection featured image as a banner on the collection liquid template?
+2.  How would you add the collection featured image as a banner on the collection liquid template?
 
 Answer#2: I would again use the Shopify Section 2.0 to create another section through Shopify Liquid code.  You would use image picker settings to be able to customize image.  You can either use the image_url tag in liquid filter, or use the new image tagging for images to create a responsive image.  I would also recommend to use lazy loading, and also use JPG images to ensure that the page is not bog down with the large size of this image.  
 
-Using liquid code and HTML, create a simple pagination container, "< 1 2 ... 5 >".
+3.  Using liquid code and HTML, create a simple pagination container, "< 1 2 ... 5 >".
 
 Answer#3:   
    {% paginate collection.products by 5 %}
