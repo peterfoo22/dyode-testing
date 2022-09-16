@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/dyode-testing/static/css/main.7b06f564.css",
+    "main.js": "/dyode-testing/static/js/main.d83eb436.js",
+    "static/js/787.294994ae.chunk.js": "/dyode-testing/static/js/787.294994ae.chunk.js",
+    "static/media/Hero-Image-1.jpeg": "/dyode-testing/static/media/Hero-Image-1.3b2bb981e0cba9777289.jpeg",
+    "static/media/Hero-Image-2.jpeg": "/dyode-testing/static/media/Hero-Image-2.7b31503f99ebe6c04a1e.jpeg",
+    "static/media/Hero-Image-3.jpeg": "/dyode-testing/static/media/Hero-Image-3.c68ae7c442d56667c50c.jpeg",
+    "static/media/Product-Image-1.jpeg": "/dyode-testing/static/media/Product-Image-1.779f9cd2b07ddaeac503.jpeg",
+    "static/media/logo.svg": "/dyode-testing/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/dyode-testing/index.html",
+    "main.7b06f564.css.map": "/dyode-testing/static/css/main.7b06f564.css.map",
+    "main.d83eb436.js.map": "/dyode-testing/static/js/main.d83eb436.js.map",
+    "787.294994ae.chunk.js.map": "/dyode-testing/static/js/787.294994ae.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7b06f564.css",
+    "static/js/main.d83eb436.js"
+  ]
+}
