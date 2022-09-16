@@ -3,7 +3,6 @@ import HERO1 from "./images/Hero-Image-1.jpeg";
 import HERO2 from "./images/Hero-Image-2.jpeg";
 import HERO3 from "./images/Hero-Image-3.jpeg";
 
-
 // Import Swiper styles
 import "swiper/css";
 import "./hero-slider.css";

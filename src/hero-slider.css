@@ -120,6 +120,7 @@
   }
 
   .swiper-pagination {
+    color: black !important;
     bottom: 150px !important;
   }
 

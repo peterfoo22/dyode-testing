@@ -1,0 +1,48 @@
+.product-card {
+
+}
+
+
+.product-card__info-holder {
+
+}
+
+.product-card__title {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  margin: 0;
+  margin-top: 22px;
+  margin-bottom: 7px;
+  color: #000000;
+}
+
+.product-card__subtitle {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #000000;
+  margin: 0;
+}
+
+
+.product-card__price {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 46px;
+  text-align: center;
+  margin: 0;
+
+  /* Green */
+
+  color: #10504F;
+
+}
