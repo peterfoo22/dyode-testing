@@ -1,70 +1,28 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Describe how you would make a line of text in a homepage section editable from theme customization and how you would access this in liquid.
+How would you add the collection featured image as a banner on the collection liquid template?
+Using liquid code and HTML, create a simple pagination container, "< 1 2 ... 5 >".
+Using liquid code, access the product named "Blue T-Shirt". Store the id, title, handle, price, url, and image in variables.
+Using liquid code, create a key:value array using the list below. Loop through the array. Upon key type, store the value in a variable to be used later:
 
-## Available Scripts
 
-In the project directory, you can run:
+ To make a line of text editable in the Theme Customization.  In Shopify 2.0 you would create a section with a “textarea” setting in the JSON schema.  Clients would have to edit this section through the theme customizer through Shopify CMS.
+I would again use the Shopify Section 2.0 to create another section through Shopify Liquid code.  You would use image picker settings to be able to customize image.  You can either use the image_url tag in liquid filter, or use the new image tagging for images to create a responsive image.  I would also recommend to use lazy loading, and also use JPG images to ensure that the page is not bog down with the large size of this image.  
+   {% paginate collection.products by 5 %}
+     {% for product in collection.products %}
+		<% comment %> Product Grid Card <% endcomment %>
+     {% endfor %}
+   {% endpaginate %}
 
-### `npm start`
+ {% assign my_product = all_products['Blue T Shirt']' %},  {% assign product.id = my_product.id %}, {% assign product.title = product_title %}, {% assign product.handle = product_handle %}, {% assign product.id = product_id %}, {% assign product.price = product_price %}, {% assign product.url = product_url %}, {% assign product..featured_image = product_featured-image %}
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+{% assign my_array = ["fruit:apple", "vegetable:carrot", "cloth:t-shirt", "denim:jeans"] %}
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+{% assign keyArray = "" %}
 
-### `npm test`
+{% for eachObject in my_array  %}
+  {% assign key = eachObject | split: ':' | first %}
+  {% assign keyArray = keyArray| append: ',' | append: key %}
+{% endfor %}
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+{% assign keyArray = keyArray | remove_first: ',' | split: ',' %}
