@@ -1,39 +1,63 @@
 
-<b>Liquid Challenge Questions</b>
+<h2>Liquid Challenge Questions</h2>
 
-1.  Describe how you would make a line of text in a homepage section editable from theme customization and how you would access this in liquid.
-   
-Answer - #1: To make a line of text editable in the Theme Customization.  In Shopify 2.0 you would create a section with a “textarea” setting in the JSON     schema.  Clients would have to edit this section through the theme customizer through Shopify CMS.
-
-2.  How would you add the collection featured image as a banner on the collection liquid template?
-
-Answer - #2: I would again use the Shopify Section 2.0 to create another section through Shopify Liquid code.  You would use image picker settings to be   able to customize image.  You can either use the image_url tag in liquid filter, or use the new image tagging for images to create a responsive image.  I would also recommend to use lazy loading, and also use JPG images to ensure that the page is not bog down with the large size of this image.  
-
-3.  Using liquid code and HTML, create a simple pagination container, "< 1 2 ... 5 >".
-
-Answer - #3:   
-   {% paginate collection.products by 5 %}
-     {% for product in collection.products %}
-       <% comment %> Product Grid Card <% endcomment %>
-     {% endfor %}
-   {% endpaginate %}
-
-
-4. Using liquid code, access the product named "Blue T-Shirt". Store the id, title, handle, price, url, and image in variables.
-Using liquid code, create a key:value array using the list below. Loop through the array. Upon key type, store the value in a variable to be used later:
-
-
-
-
- {% assign my_product = all_products['Blue T Shirt']' %},  {% assign product.id = my_product.id %}, {% assign product.title = product_title %}, {% assign product.handle = product_handle %}, {% assign product.id = product_id %}, {% assign product.price = product_price %}, {% assign product.url = product_url %}, {% assign product..featured_image = product_featured-image %}
-
-{% assign my_array = ["fruit:apple", "vegetable:carrot", "cloth:t-shirt", "denim:jeans"] %}
-
-{% assign keyArray = "" %}
-
-{% for eachObject in my_array  %}
-  {% assign key = eachObject | split: ':' | first %}
-  {% assign keyArray = keyArray| append: ',' | append: key %}
-{% endfor %}
-
-{% assign keyArray = keyArray | remove_first: ',' | split: ',' %}
+<ol>
+    <li>
+        <p>Describe how you would make a line of text in a homepage section editable from theme customization and how you would access this in liquid.</p>
+        <ol>
+            <li>
+                <p>To make a line of text editable in the Theme Customization. &nbsp;In Shopify 2.0 you would create a section with a &ldquo;textarea&rdquo; setting in the JSON schema. &nbsp;Clients would have to edit this section through the theme customizer through Shopify CMS.</p>
+            </li>
+        </ol>
+    </li>
+    <li>
+        <p>How would you add the collection featured image as a banner on the collection liquid template?</p>
+        <ol>
+            <li>
+                <p>I would again use the Shopify Section 2.0 to create another section through Shopify Liquid code. &nbsp;You would use image picker settings to be able to customize image. &nbsp;You can either use the image_url tag in liquid filter, or use the new image tagging for images to create a responsive image. &nbsp;I would also recommend to use lazy loading, and also use JPG images to ensure that the page is not bog down with the large size of this image. &nbsp;</p>
+            </li>
+        </ol>
+    </li>
+    <li>
+        <p>Using liquid code and HTML, create a simple pagination container, &quot;&lt; 1 2 ... 5 &gt;&quot;.</p>
+        <ol>
+            <li>
+                <p>&nbsp; &nbsp;{% paginate collection.products by 5 %}</p>
+            </li>
+        </ol>
+    </li>
+</ol>
+<p>&nbsp; &nbsp; &nbsp;{% for product in collection.products %}</p>
+<p>&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&lt;% comment %&gt; Product Grid Card &lt;% endcomment %&gt;</p>
+<p>&nbsp; &nbsp; &nbsp;{% endfor %}</p>
+<p>&nbsp; &nbsp;{% endpaginate %}</p>
+<ol start="4">
+    <li>
+        <p>Using liquid code, access the product named &quot;Blue T-Shirt&quot;. Store the id, title, handle, price, url, and image in variables.</p>
+        <ol>
+            <li>
+                <p>{% assign my_product = all_products[&apos;Blue T Shirt&apos;]&apos; %}, &nbsp;{% assign product.id = my_product.id %}, {% assign product.title = product_title %}, {% assign product.handle = product_handle %}, {% assign product.id = product_id %}, {% assign product.price = product_price %}, {% assign product.url = product_url %}, {% assign product..featured_image = product_featured-image %}</p>
+            </li>
+        </ol>
+    </li>
+</ol>
+<p><br></p>
+<ol start="5">
+    <li>
+        <p>Using liquid code, create a key:value array using the list below. Loop through the array. Upon key type, store the value in a variable to be used later:</p>
+        <ol>
+            <li>
+                <p>{% assign my_array = [&quot;fruit:apple&quot;, &quot;vegetable:carrot&quot;, &quot;cloth:t-shirt&quot;, &quot;denim:jeans&quot;] %}</p>
+            </li>
+        </ol>
+    </li>
+</ol>
+<p><br></p>
+<p>{% assign keyArray = &quot;&quot; %}</p>
+<p><br></p>
+<p>{% for eachObject in my_array &nbsp;%}</p>
+<p>&nbsp; {% assign key = eachObject | split: &apos;:&apos; | first %}</p>
+<p>&nbsp; {% assign keyArray = keyArray| append: &apos;,&apos; | append: key %}</p>
+<p>{% endfor %}</p>
+<p><br></p>
+<p>{% assign keyArray = keyArray | remove_first: &apos;,&apos; | split: &apos;,&apos; %}</p>
