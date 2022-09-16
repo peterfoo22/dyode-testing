@@ -8,13 +8,13 @@ import HERO3 from "./images/Hero-Image-3.jpeg";
 import "swiper/css";
 import "./hero-slider.css";
 
-import "swiper/css/navigation";
+import "swiper/css/pagination";
 // import required modules
-import { Navigation } from "swiper";
+import { Pagination } from "swiper";
 
 const HeroSlider = () => {
   return (
-    <Swiper navigation={true} modules={[Navigation]} className="swiper">
+    <Swiper pagination={true} modules={[Pagination]} className="swiper">
       <SwiperSlide>
         <div className="swiper__header-container">
           <h1 className="swiper__header">Shop Our Arrivals</h1>

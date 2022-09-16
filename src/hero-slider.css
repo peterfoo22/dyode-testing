@@ -7,8 +7,6 @@
   text-align: center;
   font-size: 18px;
   background: #fff;
-
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -76,5 +74,54 @@
 
 .alternative {
   color: white;
+}
+
+@media only screen and (max-width: 1067px) {
+  .swiper__header-container {
+    position: static;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .swiper-slide {
+    display: flex;
+    flex-direction: column-reverse;
+  } 
+
+  .alternative {
+    color: #10504F;
+  }
+
+  .swiper__header {
+    height: 46px;
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 46px;
+    text-align: center;
+  }
+
+  .swiper-button-next {
+    display: none;
+  }
+
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .swiper__subheader {
+    font-weight: 400;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+  }
+
+  .swiper-pagination {
+    bottom: 150px !important;
+  }
+
 }
 
