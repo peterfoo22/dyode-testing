@@ -27,10 +27,11 @@
         </ol>
     </li>
 </ol>
-<p>&nbsp; &nbsp; &nbsp;{% for product in collection.products %}</p>
-<p>&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&lt;% comment %&gt; Product Grid Card &lt;% endcomment %&gt;</p>
-<p>&nbsp; &nbsp; &nbsp;{% endfor %}</p>
-<p>&nbsp; &nbsp;{% endpaginate %}</p>
+<p> {% paginate collection.products by 5 %}</p>
+<p>   {% for product in collection.products %}</p>
+<p>		<% comment %> Product Grid Card <% endcomment %></p>
+    <p>   {% endfor %} </p>
+<p>  {% endpaginate %}</p>
 <ol start="4">
     <li>
         <p>Using liquid code, access the product named &quot;Blue T-Shirt&quot;. Store the id, title, handle, price, url, and image in variables.</p>
